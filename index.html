@@ -21,18 +21,14 @@
         <div id="game-toast" class="hidden"></div>
 
         <!-- Floating D-Pad in the corners for thumb access -->
-        <div id="mobile-ui">
-            <div class="dpad-left">
-                <button id="btn-left" class="control-btn">←</button>
+<footer id="controls">
+            <div class="dpad-grid">
+                <div></div> <button id="btn-up" class="control-btn">↑</button>
+                <div></div> <button id="btn-left" class="control-btn">←</button>
+                <button id="btn-down" class="control-btn">↓</button>
+                <button id="btn-right" class="control-btn">→</button>
             </div>
-            <div class="dpad-right">
-                <button id="btn-up" class="control-btn">↑</button>
-                <div class="horizontal-btns">
-                     <button id="btn-down" class="control-btn">↓</button>
-                     <button id="btn-right" class="control-btn">→</button>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
     <script src="game.js"></script>
 </body>
