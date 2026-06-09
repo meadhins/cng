@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dad's CNG Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header id="scoreboard">
+            <div class="score-item">⭐ Stars: <span id="star-count">0</span></div>
+            <div class="score-item">🚖 Trips: <span id="trip-count">0</span></div>
+            <button id="voice-toggle" class="ui-button">🔊 Voice On</button>
+        </header>
+
+        <main id="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+            <div id="game-toast" class="hidden"></div>
+        </main>
+
+        <footer id="controls">
+            <div class="control-row">
+                <button id="btn-up" class="control-btn">↑</button>
+            </div>
+            <div class="control-row">
+                <button id="btn-left" class="control-btn">←</button>
+                <button id="btn-down" class="control-btn">↓</button>
+                <button id="btn-right" class="control-btn">→</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
