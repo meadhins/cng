@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Dad's CNG Adventure</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="game-container">
+        <!-- Canvas now fills the entire background -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Floating UI Elements -->
         <header id="scoreboard">
-            <div class="score-item">⭐ Stars: <span id="star-count">0</span></div>
-            <div class="score-item">🚖 Trips: <span id="trip-count">0</span></div>
-            <button id="voice-toggle" class="ui-button">🔊 Voice On</button>
+            <div class="score-item">⭐ <span id="star-count">0</span></div>
+            <div class="score-item">🚖 <span id="trip-count">0</span></div>
+            <button id="voice-toggle" class="ui-button">🔊</button>
         </header>
 
-        <main id="canvas-container">
-            <canvas id="gameCanvas"></canvas>
-            <div id="game-toast" class="hidden"></div>
-        </main>
+        <div id="game-toast" class="hidden"></div>
 
-        <footer id="controls">
-            <div class="control-row">
-                <button id="btn-up" class="control-btn">↑</button>
-            </div>
-            <div class="control-row">
+        <!-- Floating D-Pad in the corners for thumb access -->
+        <div id="mobile-ui">
+            <div class="dpad-left">
                 <button id="btn-left" class="control-btn">←</button>
-                <button id="btn-down" class="control-btn">↓</button>
-                <button id="btn-right" class="control-btn">→</button>
             </div>
-        </footer>
+            <div class="dpad-right">
+                <button id="btn-up" class="control-btn">↑</button>
+                <div class="horizontal-btns">
+                     <button id="btn-down" class="control-btn">↓</button>
+                     <button id="btn-right" class="control-btn">→</button>
+                </div>
+            </div>
+        </div>
     </div>
-
     <script src="game.js"></script>
 </body>
 </html>
