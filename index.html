@@ -8,26 +8,20 @@
 </head>
 <body>
     <div id="game-container">
-        <!-- Canvas now fills the entire background -->
-        <canvas id="gameCanvas"></canvas>
-
-        <!-- Floating UI Elements -->
         <header id="scoreboard">
             <div class="score-item">⭐ <span id="star-count">0</span></div>
             <div class="score-item">🚖 <span id="trip-count">0</span></div>
             <button id="voice-toggle" class="ui-button">🔊</button>
         </header>
 
-        <div id="game-toast" class="hidden"></div>
+        <main id="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+            <div id="game-toast" class="hidden"></div>
+        </main>
 
-        <!-- Floating D-Pad in the corners for thumb access -->
-<footer id="controls">
+        <footer id="controls">
             <div class="dpad-grid">
-                <div></div> <button id="btn-up" class="control-btn">↑</button>
-                <div></div> <button id="btn-left" class="control-btn">←</button>
-                <button id="btn-down" class="control-btn">↓</button>
-                <button id="btn-right" class="control-btn">→</button>
-            </div>
+                <div></div> <button id="btn-up" class="control-btn">↑</button> <div></div> <button id="btn-left" class="control-btn">←</button> <button id="btn-down" class="control-btn">↓</button> <button id="btn-right" class="control-btn">→</button> </div>
         </footer>
     </div>
     <script src="game.js"></script>
